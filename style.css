@@ -1,98 +1,103 @@
-
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f7f7f7;
-}
-
-header {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
 }
 
-header img {
-    width: 200px;
-    height: 70px;
+.topHeader {
+
+    flex-direction: row;
+    width: 100%;
 }
 
-header ul {
+.logo {
+    margin-left: 50px;
+}
+
+.navBar {
+    padding: 10px;
+    flex: 1;
+    background: #333;
+    width: 100%;
+
+}
+.navBar ul {
     list-style: none;
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 
-header li {
+
+.navLinks {
+    max-height: 20px;
+    align-self: center;
+
+}
+
+.navLinks ul {
+    list-style: none;
+
+
+
+}
+
+.navLinks ul li {
+
     display: inline;
-    margin-right: 20px;
+    margin: 50px;
+
 }
 
-header a {
-    color: #fff;
+.navLinks ul li a {
+    color: antiquewhite;
     text-decoration: none;
 }
 
-main > section:first-child img {
-    width: 100%;
-    height: auto;
-}
-
-.features {
+main {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin: 30px;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+
 }
 
-.features > div {
-    text-align: center;
-    padding: 30px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 30%;
+.topImg {
+    margin: 25px;
 }
 
-.features h2 {
-    margin-top: 20px;
-    font-size: 20px;
-    font-weight: bold;
+.deck {
+    display: flex;
+    flex-direction: row;
+
 }
 
-.features p {
-    font-size: 16px;
-    color: #777;
+.deck img {
+    padding: 15px;
 }
 
-.features img {
-    width: 100%;
-    height: auto;
-}
-
-main > section:nth-child(3) img {
-    width: 70%;
-    height: auto;
-}
-
-main > section:nth-child(4) {
-    background-color: #eee;
-    text-align: center;
-    padding: 40px 0;
-}
-
-main > section:nth-child(4) h2 {
-    font-size: 28px;
-    font-weight: bold;
-    color: #333;
+.card {
+    display: flex;
+    flex-direction: row;
+    width: 965px;
+    padding: 15px;
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
+    background: #333;
+    height: 70px;
+    width: 100%;
+}
+
+article {
+    padding: 20px;
+}
+
+header h2 {
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+nav ul li {
+    display: flex;
+    padding-left: 20px;
 }
